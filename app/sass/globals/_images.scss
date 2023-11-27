@@ -1,0 +1,53 @@
+ /* -------------
+    image styles
+   ---------------*/
+ /* mobile image */
+.card-mobile {
+    position: relative;
+    margin-bottom: 6.25rem;
+}
+.image-mobile {
+    width: 15rem;
+    position: absolute;
+    top: -7.5rem;
+    left: 3rem;
+
+}
+.bg-mobile {
+    width: 15rem;
+    position: absolute;
+    top: -1rem;
+    left: 3rem;
+}
+/* desktop image */
+.card-desktop {
+    width: 20rem;
+    position: relative;
+    display: none;
+}
+.box {
+    width: 170px;
+    position: absolute;
+    top: 175px;
+    left: -90px;
+    z-index: 10;
+}
+.image-desktop {
+    position: absolute;
+    top: 30px;
+    left: -60px;
+}
+.bg-desktop {
+    position: absolute;
+    width: 100%;
+    margin-left: -2rem;
+}
+
+@media  screen and (min-width: 400px) {
+    .card-mobile {
+        display: none;
+    }
+    .card-desktop {
+        display: block;
+    }
+}
